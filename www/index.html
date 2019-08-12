@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, shrink-to-fit=no">
+ 
+   
+   
+   
+    <title>Դոյ Դոյ</title>
+ <link rel="icon" href="icon.png">
+
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Link to your css file -->
+    <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
+
+
+
+    <div class="container">
+
+        <header>
+
+            <img src="head.png" alt="">
+
+            <div class="gradient"></div>
+            <img src="head2.png" alt="">
+
+        </header>
+
+
+
+        <div class="row mainblog" >
+            <!--if(blogInRow==2)-->
+
+
+            <div class="blog col-lg-4 offset-lg-1   col-8 offset-2" onclick="location.href='blog4.html';">
+
+                <p class="blogtext">Իմաստով <br>պատերազմ</p>
+                <img src="blog4blog.png" alt="" class="blogimg">
+            </div>
+
+
+
+            <div class="blog blog col-lg-4 offset-lg-1   col-8 offset-2" onclick="location.href='blog3.html';">
+
+                <p class="blogtext">Դզող-փչողի<br> մոտ</p>
+                <img src="blog3blog.png" alt="" class="blogimg">
+            </div>
+
+
+        </div>
+
+
+
+
+        <div class="row mainblog">
+         <!--   if(blogInRow==2)-->
+
+
+            <div class="blog col-lg-4 offset-lg-1   col-8 offset-2" onclick="location.href='blog2.html';">
+
+                <p class="blogtext">Ատամնաբույժի <br/>
+                մոտ</p>
+                <img src="blog2blog.png" alt="" class="blogimg">
+            </div>
+
+
+
+            <div class="blog blog col-lg-4 offset-lg-1   col-8 offset-2" onclick="location.href='blog1.html';">
+
+                <p class="blogtext">Տպագրատանը, <br> Դոյլադրամա</p>
+                <img src="blog1blog.png" alt="" class="blogimg">
+            </div>
+
+
+        </div>
+
+
+
+<!--
+        <div class="row mainblog">
+            if(blogInRow==1)
+
+
+            <div class="blog blog col-lg-4 offset-lg-4  col-8 offset-2" onclick="location.href='blog1.html';">
+
+                <p class="blogtext"></p>
+                <img src="" alt="" class="blogimg">
+            </div>-->
+
+
+
+
+
+
+       
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <!--containerDivStop-->
+
+    <div class="padval">
+
+        <img src="padval.png" alt="">
+
+      <a href="https://www.instagram.com/doydoy_blog/"> <img src="insta.png" alt="" id="insta"></a> 
+        <img src="top.png" id="top" alt="">
+
+    </div>
+ <script type="text/javascript" src="cordova.js"></script>
+    <script defer>
+        window.onload = function() {
+            document.getElementById('top').onclick = scrolltop;
+            document.getElementById('top').style.display = "none";
+        };
+        var t;
+        var t2;
+
+        function scrolltop() {
+            var top = Math.max(document.body.scrollTop, document.documentElement.scrollTop);
+            if (top > 0) {
+                window.scrollTo(0, Math.floor(top *0.7));
+                t = setTimeout("scrolltop()", 30);
+            } else {
+                clearTimeout(t);
+            }
+            return false;
+        }
+
+
+
+        window.onscroll = function() {
+
+            if (pageYOffset < document.body.clientHeight/5) {
+                document.getElementById('top').style.opacity = "0";
+
+                t2 = setTimeout("displaynone(0)", 500);
+
+
+            } else {
+
+               
+                document.getElementById('top').style.display = "inherit";
+             
+                 document.getElementById('top').style.opacity = '1';
+                
+               
+
+
+
+            }
+       }
+
+        function displaynone(b) {
+
+            
+            
+            
+               if (pageYOffset < document.body.clientHeight*0.2) {
+                document.getElementById('top').style.display = "none";
+          
+            } else { document.getElementById('top').style.display = "inherit";
+       }
+            clearTimeout(t2);
+        
+        
+        
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+</body></html>

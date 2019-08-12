@@ -1,0 +1,100 @@
+html {
+  font-size: 15px;
+}
+body {
+  background-color: #bbe8d1;
+}
+header {
+  width: 100%;
+}
+header :nth-child(1) {
+  border-radius: 20px 20px 0 0;
+}
+header :nth-child(3) {
+  border-radius: 20px;
+}
+header img {
+  width: 100%;
+}
+header .gradient {
+  height: 40px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#c0c0c0), to(#bbe8d1));
+  background: linear-gradient(#c0c0c0, #bbe8d1);
+  margin-top: -5px;
+  padding: 0;
+}
+.mainblog {
+  margin-top: 20px;
+}
+.mainblog .blog {
+  background: #90a5d0;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.mainblog .blog .blogtext {
+  font-size: 1rem;
+  text-align: center;
+  margin: 0;
+}
+.mainblog .blog .blogimg {
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+.padval {
+  position: relative;
+  margin-top: 20px;
+}
+.padval img {
+  width: 100%;
+}
+.padval #insta {
+  width: 20%;
+  position: absolute;
+  right: 10vw;
+  top: 0vw;
+}
+#top {
+  width: 12vw;
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  cursor: pointer;
+  z-index: 1000;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+  display: none;
+}
+@media (min-width: 576px) {
+  .mainblog .blog .blogtext {
+    font-size: 1.2rem;
+  }
+  #top {
+    width: 15vw;
+  }
+}
+@media (min-width: 768px) {
+  .mainblog .blog .blogtext {
+    font-size: 1.5rem;
+  }
+  #top {
+    width: 13vw;
+  }
+}
+@media (min-width: 992px) {
+  .mainblog .blog .blogtext {
+    font-size: 1.7rem;
+  }
+  #top {
+    width: 10vw;
+  }
+}
+@media (min-width: 1200px) {
+  .mainblog .blog .blogtext {
+    font-size: 2rem;
+  }
+  #top {
+    width: 8vw;
+  }
+}

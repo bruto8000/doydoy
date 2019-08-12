@@ -1,0 +1,172 @@
+@bg_guyn: #BBE8D1;
+@head_guyn: #C0C0C0;
+@blog_guyn: #90A5D0;
+
+html {
+    font-size: 15px;
+}
+
+body {
+    background-color: @bg_guyn;
+
+
+
+}
+
+
+header {
+    width: 100%;
+    cursor:pointer;
+
+    :nth-child(1) {
+        border-radius: 20px 20px 0 0;
+
+
+    }
+
+    :nth-child(3) {
+        border-radius: 20px;
+    }
+
+    img {
+        width: 100%;
+
+
+
+
+
+    }
+
+    .gradient {
+        height: 40px;
+        background: linear-gradient(@head_guyn, @bg_guyn);
+        margin-top: -5px;
+        padding: 0;
+    }
+}
+
+
+
+.mainblog {
+
+    margin-top: 20px;
+ padding: 0;
+    
+
+    .blog {
+        background: @blog_guyn;
+        border-radius: 20px 20px 0 0;
+       
+        margin-top:20px;
+         padding: 0;
+
+        .blogtext {
+            font-size: 1rem;
+            text-align: center;
+            margin:0px 40px;
+
+
+        }
+
+        .blogimg {
+            width: 100%;
+            border-radius: 20px 20px 0 0;
+            margin-bottom: 10px;
+
+        }
+    }
+
+
+
+
+
+    }
+
+
+.padval {
+
+    position: relative;
+  
+    img {
+        width: 100%;
+    }
+
+    #insta {
+        width: 20%;
+
+        position: absolute;
+        right: 10vw;
+        top: 0vw;
+    }
+
+}
+
+#top {
+    width: 12vw;
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    cursor: pointer;
+    z-index: 1000;
+     transition: opacity .5s;
+    display: none;
+    
+}
+
+
+
+
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    .mainblog .blog .blogtext {
+        font-size: 1.2rem
+    }
+
+    #top {
+        width: 15vw;
+    }
+    
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .mainblog .blog .blogtext {
+        font-size: 1.5rem
+    }
+
+    #top {
+        width: 13vw;
+    }
+
+}
+
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .mainblog .blog .blogtext {
+        font-size: 1.7rem
+    }
+
+    #top {
+        width: 10vw;
+    }
+
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    .mainblog .blog .blogtext {
+        font-size: 2rem
+    }
+
+    #top {
+        width: 8vw;
+    }
+
+}
+
+
